@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 560" role="img" aria-label="Símbolo PilhA+">
+  <defs>
+    <linearGradient id="pilha-flat" x1="118" y1="54" x2="375" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff200"/>
+      <stop offset=".58" stop-color="#ffd200"/>
+      <stop offset="1" stop-color="#ffb000"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#pilha-flat)" fill-rule="evenodd" stroke="#f7bd00" stroke-width="4" stroke-linejoin="round" d="M142 46h182c89 0 145 53 134 132-9 70-62 108-135 108h-52L155 500l33-198h-83L142 46Zm81 86-14 93h110c32 0 51-18 56-49 4-29-16-44-47-44H223Z"/>
+</svg>

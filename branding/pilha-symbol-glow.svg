@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 560" role="img" aria-label="Símbolo PilhA+">
+  <defs>
+    <linearGradient id="pilha-gold" x1="120" y1="50" x2="370" y2="455" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff9a8"/>
+      <stop offset=".18" stop-color="#fff200"/>
+      <stop offset=".58" stop-color="#ffd200"/>
+      <stop offset="1" stop-color="#ff9f00"/>
+    </linearGradient>
+    <linearGradient id="pilha-edge" x1="120" y1="60" x2="410" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".34" stop-color="#fff56a"/>
+      <stop offset=".68" stop-color="#ffb000"/>
+      <stop offset="1" stop-color="#ff7a00"/>
+    </linearGradient>
+    <filter id="pilha-glow" x="-35%" y="-30%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#ffd200" flood-opacity=".7" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="halo"/>
+      <feMerge><feMergeNode in="halo"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#pilha-glow)">
+    <path fill="url(#pilha-gold)" fill-rule="evenodd" stroke="#ffae00" stroke-width="7" stroke-linejoin="round" d="M142 46h182c89 0 145 53 134 132-9 70-62 108-135 108h-52L155 500l33-198h-83L142 46Zm81 86-14 93h110c32 0 51-18 56-49 4-29-16-44-47-44H223Z"/>
+    <path fill="none" stroke="url(#pilha-edge)" stroke-linecap="round" stroke-linejoin="round" stroke-width="11" opacity=".92" d="M151 60h169c69 0 112 34 119 87M119 286l35-226M164 459l34-170"/>
+    <path fill="none" stroke="#fffbd0" stroke-linecap="round" stroke-width="4" opacity=".88" d="M160 72h158c50 0 84 19 100 51"/>
+  </g>
+</svg>

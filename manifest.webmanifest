@@ -1,0 +1,40 @@
+{
+  "id": "/pilha-plus-pwa-preview/",
+  "name": "PilhA+",
+  "short_name": "PilhA+",
+  "description": "Acompanhamento de energia, equilíbrio e evolução.",
+  "lang": "pt-BR",
+  "start_url": "/pilha-plus-pwa-preview/",
+  "scope": "/pilha-plus-pwa-preview/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#111214",
+  "theme_color": "#111214",
+  "categories": ["health", "lifestyle", "productivity"],
+  "icons": [
+    {
+      "src": "icons/pilha-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/pilha-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/pilha-icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/pilha-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

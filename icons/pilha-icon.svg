@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">PilhA+</title>
+  <desc id="description">Símbolo do PilhA+ sobre fundo azul-escuro.</desc>
+  <defs>
+    <linearGradient id="background" x1="48" y1="32" x2="464" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16305f"/>
+      <stop offset="1" stop-color="#081226"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="144" y1="128" x2="368" y2="384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8ee7ff"/>
+      <stop offset="1" stop-color="#5ba4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#background)"/>
+  <path d="M144 365V147c0-13.3 10.7-24 24-24h88c60.8 0 104 37.7 104 94.5S316.8 312 256 312h-48v53c0 13.3-10.7 24-24 24h-16c-13.3 0-24-10.7-24-24Zm64-113h43.5c28.9 0 47.5-12.8 47.5-34.5S280.4 183 251.5 183H208v69Z" fill="white"/>
+  <path d="M345 315v-28h-28c-11 0-20-9-20-20s9-20 20-20h28v-28c0-11 9-20 20-20s20 9 20 20v28h28c11 0 20 9 20 20s-9 20-20 20h-28v28c0 11-9 20-20 20s-20-9-20-20Z" fill="url(#accent)"/>
+</svg>
