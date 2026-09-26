@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'pilha-app-shell';
-const BUILD_ID = '20260926-9542713';
+const BUILD_ID = '20260926-0814353';
 const CACHE_NAME = `${CACHE_PREFIX}-v${BUILD_ID}`;
 const BASE = '/pilha-plus-pwa-preview';
 const SHELL_HTML = `${BASE}/index.html`;
