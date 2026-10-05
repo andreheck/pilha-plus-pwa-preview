@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'pilha-app-shell';
-const BUILD_ID = '20261005-3f0fb22';
+const BUILD_ID = '20261005-2c98edc';
 const CACHE_NAME = `${CACHE_PREFIX}-v${BUILD_ID}`;
 const BASE = '/pilha-plus-pwa-preview';
 const SHELL_HTML = `${BASE}/index.html`;
@@ -53,6 +53,7 @@ async function cacheApplicationShell() {
 
   const response = await fetch(SHELL_HTML, { cache: 'no-store' });
   if (!response.ok) return;
+  await cache.put(SHELL_HTML, response.clone());
   const html = await response.text();
   const assets = [...html.matchAll(/(?:src|href)="(\/pilha-plus-pwa-preview\/assets\/[^"]+)"/g)].map((match) => match[1]);
   await Promise.all(assets.map(async (asset) => {
@@ -93,7 +94,7 @@ self.addEventListener('fetch', (event) => {
 
   if (request.mode === 'navigate') {
     event.respondWith(
-      fetch(request)
+      fetch(request, { cache: 'no-store' })
         .then((response) => {
           const contentType = response.headers.get('content-type') ?? '';
           if (response.ok && contentType.includes('text/html')) {
